@@ -1,6 +1,6 @@
-// interpreter.c
+// interpretador.c
 
-#include	"interpreter.h"
+#include	"interpretador.h"
 #include	"opcodes.h"
 #include    <errno.h>
 
@@ -28,7 +28,7 @@ int	isWide = 0;
 //     if (operands) fetch operands;
 //     execute the action for the opcode;
 // } while (there is more to do);
-void interpreter(METHOD_DATA* method, THREAD* thread, JVM* jvm)
+void interpretador(METHOD_DATA* method, THREAD* thread, JVM* jvm)
 {
 	thread->program_counter = method->bytecodes;
 
