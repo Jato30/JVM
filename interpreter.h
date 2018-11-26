@@ -5,9 +5,9 @@
 // 6.5.  Instructions (detalhes)    -> https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-6.html#jvms-6.5
 // https://en.wikipedia.org/wiki/Java_bytecode_instruction_listings
 
-// interpreter.h
-#ifndef INTERPRETER_H
-#define INTERPRETER_H
+// interpretador.h
+#ifndef INTERPRETADOR_H
+#define INTERPRETADOR_H
 
 #include "checker.h"
 
@@ -25,7 +25,7 @@ extern INSTRUCTION func[];
 
 // INTERPRETADOR DE BYTECODES
 // executa todas as instrucoes
-void interpreter(METHOD_DATA*, THREAD*, JVM*);
+void interpretador(METHOD_DATA*, THREAD*, JVM*);
 
 
 //-- instrucoes
@@ -360,7 +360,7 @@ void interpreter(METHOD_DATA*, THREAD*, JVM*);
 
 
 
-#endif // INTERPRETER_H
+#endif // INTERPRETADOR_H
 
 // -- https://docs.oracle.com/javase/specs/jvms/se7/html/jvms-2.html#jvms-2.6.1
 // 1.nop_
